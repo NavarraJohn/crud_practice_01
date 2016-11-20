@@ -1,0 +1,27 @@
+<h1>Create new Route</h1>
+
+<%= form_tag "/routes", method: :post do %>
+  <div>
+    <%= label_tag :title, " Route Title:" %>
+    <%= text_field_tag :title %>
+  </div>
+
+  <div>
+    <%= label_tag :weight %>
+    <%= text_field_tag :weight %>
+  </div>
+
+  <div>
+    <%= label_tag :description %>
+    <%= text_field_tag :idescription %>
+  </div>
+
+  <div>
+    <%= label_tag :color %>
+    <%= text_field_tag :color %>
+  </div>
+
+  <div>
+    <%= submit_tag "Create Route" %>
+  </div>
+<% end %>
